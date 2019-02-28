@@ -1,0 +1,573 @@
+{
+    "@platforms": ["android", "iPhone", "iPad"],
+    "id": "H5C757C2E",/*应用的标识，创建应用时自动生成，勿手动修改*/
+    "name": "日日盈",/*应用名称，程序桌面图标名称*/
+    "version": {
+        "name": "1.0",/*应用版本名称*/
+        "code": ""
+    },
+    "description": "",/*应用描述信息*/
+    "icons": {
+        "72": "icon.png"
+    },
+    "launch_path": "http://app.rry.jinjifuweng.com/",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+    "developer": {
+        "name": "",/*开发者名称*/
+        "email": "",/*开发者邮箱地址*/
+        "url": ""/*开发者个人主页地址*/
+    },
+    "permissions": {
+        "Messaging":{
+        	"description": "短彩邮件插件"
+        },
+        "Cache": {
+            "description": "管理应用缓存"
+        },
+        "Console": {
+            "description": "跟踪调试输出日志"
+        },
+        "Contacts": {
+            "description": "访问系统联系人信息"
+        },
+        "Events": {
+            "description": "应用扩展事件"
+        },
+        "Maps": {
+            "description": "管理地图插件"
+        },
+        "Speech": {
+            "description": "管理语音识别插件"
+        }
+    },
+    "plus": {
+        "splashscreen": {
+            "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+            "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
+        },
+        "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+        "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+        "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+        "distribute": {
+            "apple": {
+                "appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+                "mobileprovision": "",/*iOS应用打包配置文件*/
+                "password": "",/*iOS应用打包个人证书导入密码*/
+                "p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+                "devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+                "frameworks":[
+                ]/*调用Native.js调用原生Objective-c API需要引用的FrameWork，如需调用GameCenter，则添加"GameKit.framework"*/
+            },
+            "google": {
+                "packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+                "keystore": "",/*Android应用打包使用的密���库文件*/
+                "password": "",/*Android应用打包使用密钥库中证书的密码*/
+                "aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+               "permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+				/*使用Native.js调用原生安卓API需要使用到的系统权限*/
+            },
+            "orientation": [
+                "portrait-primary"
+            ],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+            "icons": {
+                "ios": {
+                    "prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+                     /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+                    "iphone": {
+                        "normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+                        "retina": "", /*iPhone4程序图标，分辨率：114x114*/
+                         /*iPhone4S/5/6程序图标，分辨率：120x120*/
+			 /*iPhone6 Plus程序图标，分辨率：180x180*/
+                        "spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+                        "spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+                         /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+                        "settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+                         /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+			"app@2x":"unpackage/res/icons/120x120.png","app@3x":"unpackage/res/icons/180x180.png","settings@3x":"unpackage/res/icons/87x87.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","spotlight@3x":"unpackage/res/icons/120x120.png","notification@3x":"unpackage/res/icons/60x60.png","notification@2x":"unpackage/res/icons/40x40.png" /*iPhone6Plus设置页面程序图标，分辨率：87x87*/
+                    },
+                    "ipad": {
+                        "normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+                        "retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+                         /*iPad iOS7程序图标，分辨率：76x76*/
+                         /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+                        "spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+                        "spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+                        /*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+                        /*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+                        /*iPad设置页面程序图标，分辨率：29x29*/
+                        "app":"unpackage/res/icons/76x76.png","app@2x":"unpackage/res/icons/152x152.png","settings":"unpackage/res/icons/29x29.png","proapp@2x":"unpackage/res/icons/167x167.png","spotlight":"unpackage/res/icons/40x40.png","settings@2x":"unpackage/res/icons/58x58.png","spotlight@2x":"unpackage/res/icons/80x80.png","notification":"unpackage/res/icons/20x20.png","notification@2x":"unpackage/res/icons/40x40.png" /*iPad高分屏设置页面程序图标，分辨率：58x58*/
+                    },"appstore":"unpackage/res/icons/1024x1024.png"
+                },
+                "android": {
+                    "mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+                    "ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+                    "hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+                    "xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+                    "xxhdpi": "unpackage/res/icons/144x144.png","xxxhdpi":"unpackage/res/icons/192x192.png"/*1080P 高分屏程序图标，分辨率：144x144*/
+                }
+            },
+            "splashscreen": {
+                "ios": {
+                    "iphone": {
+                        "default": "", /*iPhone3启动图片选，分辨率：320x480*/
+                        "retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+                        "retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+                        "retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+                        "retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+                        "retina55l": ""/*5.5 英寸设备(iPhone6 Plus)横屏启动图片，分辨率：2208x1242*/
+                    },
+                    "ipad": {
+                        "portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+                        "portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+                        "landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+                        "landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+                        "portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+                        "portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+                        "landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+                        "landscape-retina7": ""/*iPad iOS7高分屏横屏启动图片，分辨率：2048x1536*/
+                    }
+                },
+                "android": {
+                    "mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+                    "ldpi": "", /*大屏启动图片，分辨率：320x442*/
+                    "hdpi": "", /*高分屏启动图片，分辨率：480x762*/
+                    "xhdpi": "", /*720P高分屏启动图片，分辨率：720x1242*/
+                    "xxhdpi": "C:/Users/Administrator/Desktop/qidongye.png"/*1080P高分屏启动图片，分辨率：1080x1882*/
+                }
+            }
+        }
+    },
+	"dependencies":{
+		"pages": {
+			"views/cloud_condition.html": {
+				"href": "views/cloud_condition.html",
+				"priority": 0
+			},
+			"views/about.html": {
+				"href": "views/about.html",
+				"priority": 1
+			},
+			"views/cloud_stop_loss.html": {
+				"href": "views/cloud_stop_loss.html",
+				"priority": 2
+			},
+			"views/tab-tab2.html": {
+				"href": "views/tab-tab2.html",
+				"priority": 4
+			},
+			"views/add_contract.html": {
+				"href": "views/add_contract.html",
+				"priority": 5
+			},
+			"views/tabs2-tabd.html": {
+				"href": "views/tabs2-tabd.html",
+				"priority": 6
+			},
+			"views/add_condition_order.html": {
+				"href": "views/add_condition_order.html",
+				"priority": 7
+			},
+			"views/deal/deal_set.html": {
+				"href": "views/deal/deal_set.html",
+				"priority": 8
+			},
+			"views/home/statement.html": {
+				"href": "views/home/statement.html",
+				"priority": 9
+			},
+			"views/home/official_notice.html": {
+				"href": "views/home/official_notice.html",
+				"priority": 10
+			},
+			"views/home/set_up.html": {
+				"href": "views/home/set_up.html",
+				"priority": 11
+			},
+			"views/tab-tab1.html": {
+				"href": "views/tab-tab1.html",
+				"priority": 12
+			},
+			"views/deal/market.html": {
+				"href": "views/deal/market.html",
+				"priority": 13
+			},
+			"views/tabs2-taba.html": {
+				"href": "views/tabs2-taba.html",
+				"priority": 14
+			},
+			"views/target/kdj.html": {
+				"href": "views/target/kdj.html",
+				"priority": 15
+			},
+			"views/target/cci.html": {
+				"href": "views/target/cci.html",
+				"priority": 16
+			},
+			"views/tabs2-tabc.html": {
+				"href": "views/tabs2-tabc.html",
+				"priority": 17
+			},
+			"views/deal/bind_card.html": {
+				"href": "views/deal/bind_card.html",
+				"priority": 18
+			},
+			"views/deal/capital.html": {
+				"href": "views/deal/capital.html",
+				"priority": 19
+			},
+			"views/deal/gold.html": {
+				"href": "views/deal/gold.html",
+				"priority": 20
+			},
+			"views/home/self_list.html": {
+				"href": "views/home/self_list.html",
+				"priority": 21
+			},
+			"views/index/forget_pass.html": {
+				"href": "views/index/forget_pass.html",
+				"priority": 22
+			},
+			"views/target/rsi.html": {
+				"href": "views/target/rsi.html",
+				"priority": 23
+			},
+			"views/search.html": {
+				"href": "views/search.html",
+				"priority": 24
+			},
+			"views/tab-tab3.html": {
+				"href": "views/tab-tab3.html",
+				"priority": 25
+			},
+			"views/tab-tab4.html": {
+				"href": "views/tab-tab4.html",
+				"priority": 26
+			},
+			"views/index/risk_book.html": {
+				"href": "views/index/risk_book.html",
+				"priority": 27
+			},
+			"views/deal/deal.html": {
+				"href": "views/deal/deal.html",
+				"priority": 28
+			},
+			"views/variety_set.html": {
+				"href": "views/variety_set.html",
+				"priority": 29
+			},
+			"views/order_history.html": {
+				"href": "views/order_history.html",
+				"priority": 30
+			},
+			"views/index/login.html": {
+				"href": "views/index/login.html",
+				"priority": 31
+			},
+			"views/tabs.html": {
+				"href": "views/tabs.html",
+				"priority": 32
+			},
+			"views/tabs2-tabe.html": {
+				"href": "views/tabs2-tabe.html",
+				"priority": 33
+			},
+			"views/condition_risk_tip.html": {
+				"href": "views/condition_risk_tip.html",
+				"priority": 34
+			},
+			"views/target/boll.html": {
+				"href": "views/target/boll.html",
+				"priority": 35
+			},
+			"views/setting.html": {
+				"href": "views/setting.html",
+				"priority": 36
+			},
+			"views/index/confirm_balance.html": {
+				"href": "views/index/confirm_balance.html",
+				"priority": 37
+			},
+			"views/tabs2-tabb.html": {
+				"href": "views/tabs2-tabb.html",
+				"priority": 38
+			},
+			"views/index/register.html": {
+				"href": "views/index/register.html",
+				"priority": 39
+			},
+			"views/target/vol.html": {
+				"href": "views/target/vol.html",
+				"priority": 40
+			},
+			"views/target/macd.html": {
+				"href": "views/target/macd.html",
+				"priority": 41
+			},
+			"views/tabs2.html": {
+				"href": "views/tabs2.html",
+				"priority": 42
+			},
+			"views/edit_contract.html": {
+				"href": "views/edit_contract.html",
+				"priority": 43
+			},
+			"index.html": {
+				"href": "index.html",
+				"resources": [
+					"img/icon.png",
+					"lib/css/ionic.css",
+					"lib/fonts/ionicons.eot",
+					"lib/fonts/ionicons.ttf",
+					"lib/fonts/ionicons.woff",
+					"lib/fonts/ionicons.svg",
+					"css/lCalendar.css",
+					"css/layer.css",
+					"layui/css/layui.css",
+					"layui/font/iconfont.eot",
+					"layui/font/iconfont.svg",
+					"layui/font/iconfont.woff",
+					"layui/font/iconfont.ttf",
+					"iconfont/iconfont.css",
+					"iconfont/iconfont.eot",
+					"iconfont/iconfont.ttf",
+					"iconfont/iconfont.svg",
+					"css/index.css",
+					"css/main.css",
+					"lib/css/my-picker.css",
+					"css/mobileSelect.css",
+					"lib/fonts/iconfont0.css",
+					"lib/fonts/iconfont.eot",
+					"lib/fonts/iconfont.woff",
+					"lib/fonts/iconfont.ttf",
+					"lib/fonts/iconfont.svg",
+					"js/jquery.min.js",
+					"lib/js/ionic.bundle.min.js",
+					"js/ionic-citypicker.min.js",
+					"layui/layui.all.js",
+					"js/echarts.min.js",
+					"js/ionic-datepicker.bundle.min.js",
+					"js/lCalendar.min.js",
+					"js/controller/time_line.js",
+					"js/mobileSelect.js",
+					"lib/js/picker.min.js",
+					"js/controller/app.js",
+					"js/controller/indexCtr.js",
+					"img/z1.png",
+					"img/z2.png",
+					"img/z3.png",
+					"img/z4.png",
+					"img/z5.png",
+					"img/z6.png",
+					"img/z7.png",
+					"img/z8.png",
+					"img/z9.png",
+					"img/z10.png"
+				],
+				"refer": [
+					"views/cloud_condition.html",
+					"views/about.html",
+					"views/cloud_stop_loss.html",
+					"index.html",
+					"views/tab-tab2.html",
+					"views/add_contract.html",
+					"views/tabs2-tabd.html",
+					"views/add_condition_order.html",
+					"views/deal/deal_set.html",
+					"views/home/statement.html",
+					"views/home/official_notice.html",
+					"views/home/set_up.html",
+					"views/tab-tab1.html",
+					"views/deal/market.html",
+					"views/tabs2-taba.html",
+					"views/target/kdj.html",
+					"views/target/cci.html",
+					"views/tabs2-tabc.html",
+					"views/deal/bind_card.html",
+					"views/deal/capital.html",
+					"views/deal/gold.html",
+					"views/home/self_list.html",
+					"views/index/forget_pass.html",
+					"views/target/rsi.html",
+					"views/search.html",
+					"views/tab-tab3.html",
+					"views/tab-tab4.html",
+					"views/index/risk_book.html",
+					"views/deal/deal.html",
+					"views/variety_set.html",
+					"views/order_history.html",
+					"views/index/login.html",
+					"views/tabs.html",
+					"views/tabs2-tabe.html",
+					"views/condition_risk_tip.html",
+					"views/target/boll.html",
+					"views/setting.html",
+					"views/index/confirm_balance.html",
+					"views/tabs2-tabb.html",
+					"views/index/register.html",
+					"views/target/vol.html",
+					"views/target/macd.html",
+					"views/tabs2.html",
+					"views/edit_contract.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"layui/images/face/44.gif",
+				"iconfont/demo_fontclass.html",
+				"layui/images/face/61.gif",
+				"layui/images/face/50.gif",
+				"lib/js/ionic-angular.js",
+				"layui/images/face/4.gif",
+				"js/controller/line_graph.js",
+				"layui/images/face/26.gif",
+				"layui/images/face/35.gif",
+				"layui/lay/modules/element.js",
+				"layui/css/modules/laydate/default/laydate.css",
+				"lib/js/angular/angular.min.js",
+				"img/tab1_04.png",
+				"lib/js/ionic.bundle1111.js",
+				"layui/images/face/63.gif",
+				"layui/images/face/45.gif",
+				"layui/images/face/39.gif",
+				"layui/images/face/30.gif",
+				"lib/js/angular/angular-resource.js",
+				"layui/lay/modules/laydate.js",
+				"layui/images/face/62.gif",
+				"layui/images/face/1.gif",
+				"layui/images/face/66.gif",
+				"iconfont/demo_symbol.html",
+				"layui/lay/modules/flow.js",
+				"layui/layui.js",
+				"layui/lay/modules/jquery.js",
+				"layui/images/face/31.gif",
+				"layui/images/face/13.gif",
+				"layui/images/face/22.gif",
+				"js/controller/line_data.js",
+				"layui/images/face/20.gif",
+				"layui/lay/modules/code.js",
+				"layui/images/face/27.gif",
+				"layui/images/face/17.gif",
+				"lib/js/angular/angular-sanitize.js",
+				"views/home/news.html",
+				"layui/images/face/10.gif",
+				"img/s4.png",
+				"img/set.png",
+				"layui/images/face/56.gif",
+				"layui/images/face/3.gif",
+				"layui/css/modules/layer/default/loading-0.gif",
+				"layui/lay/modules/layedit.js",
+				"layui/images/face/53.gif",
+				"img/tab1_03.png",
+				"layui/images/face/0.gif",
+				"layui/images/face/2.gif",
+				"layui/images/face/19.gif",
+				"img/tab1_01.png",
+				"lib/js/ionic-angular.min.js",
+				"img/s6.png",
+				"lib/css/ionic.min.css",
+				"img/shuaxin.png",
+				"layui/images/face/15.gif",
+				"layui/images/face/52.gif",
+				"layui/images/face/18.gif",
+				"views/home/edit_self.html",
+				"layui/images/face/64.gif",
+				"img/s8.png",
+				"lib/js/angular/angular.js",
+				"layui/images/face/37.gif",
+				"iconfont/demo_unicode.html",
+				"layui/images/face/67.gif",
+				"layui/css/layui.mobile.css",
+				"img/tab1_05.png",
+				"layui/images/face/16.gif",
+				"layui/images/face/32.gif",
+				"layui/images/face/51.gif",
+				"layui/lay/modules/laytpl.js",
+				"layui/images/face/25.gif",
+				"layui/css/modules/code.css",
+				"img/you.png",
+				"layui/images/face/42.gif",
+				"layui/images/face/68.gif",
+				"img/tab1_02.png",
+				"layui/images/face/71.gif",
+				"img/jiahao.png",
+				"layui/images/face/49.gif",
+				"layui/images/face/70.gif",
+				"layui/images/face/54.gif",
+				"layui/images/face/33.gif",
+				"lib/js/angular/angular-sanitize.min.js",
+				"layui/lay/modules/carousel.js",
+				"img/logo.png",
+				"lib/css/mescroll.min.css",
+				"layui/lay/modules/layer.js",
+				"lib/js/angular/angular-resource.min.js",
+				"layui/images/face/69.gif",
+				"iconfont/iconfont.js",
+				"img/s5.png",
+				"layui/images/face/6.gif",
+				"img/rili.png",
+				"img/s9.png",
+				"layui/images/face/47.gif",
+				"layui/images/face/7.gif",
+				"lib/js/angular-ui/angular-ui-router.js",
+				"lib/js/ionic.min.js",
+				"layui/images/face/24.gif",
+				"img/shandian.png",
+				"layui/css/modules/layer/default/loading-2.gif",
+				"iconfont/demo.css",
+				"img/s1.png",
+				"layui/images/face/40.gif",
+				"img/zuo.png",
+				"layui/css/modules/layer/default/icon.png",
+				"img/s2.png",
+				"layui/images/face/55.gif",
+				"layui/images/face/9.gif",
+				"layui/lay/modules/form.js",
+				"lib/js/ionic.bundle.js",
+				"layui/css/modules/layer/default/layer.css",
+				"layui/lay/modules/laypage.js",
+				"layui/images/face/34.gif",
+				"layui/images/face/48.gif",
+				"lib/js/angular/angular-animate.js",
+				"layui/lay/modules/table.js",
+				"layui/images/face/59.gif",
+				"layui/images/face/46.gif",
+				"layui/images/face/43.gif",
+				"layui/css/modules/layer/default/icon-ext.png",
+				"img/jianpan.png",
+				"layui/images/face/5.gif",
+				"views/deal/history_details.html",
+				"layui/images/face/21.gif",
+				"img/s7.png",
+				"layui/images/face/28.gif",
+				"layui/images/face/12.gif",
+				"layui/images/face/8.gif",
+				"lib/js/angular-ui/angular-ui-router.min.js",
+				"layui/lay/modules/upload.js",
+				"layui/images/face/65.gif",
+				"layui/images/face/58.gif",
+				"layui/images/face/38.gif",
+				"layui/images/face/60.gif",
+				"layui/lay/modules/util.js",
+				"layui/lay/modules/mobile.js",
+				"lib/js/my-picker.js",
+				"layui/images/face/11.gif",
+				"layui/images/face/36.gif",
+				"img/s3.png",
+				"layui/images/face/57.gif",
+				"lib/js/v-tabs.js",
+				"layui/images/face/41.gif",
+				"layui/css/modules/layer/default/loading-1.gif",
+				"layui/images/face/14.gif",
+				"lib/css/v-tabs.css",
+				"img/bianji.png",
+				"iconfont/iconfont.woff",
+				"lib/js/ionic.js",
+				"layui/lay/modules/tree.js",
+				"layui/images/face/29.gif",
+				"layui/images/face/23.gif",
+				"lib/js/angular/angular-animate.min.js"
+			]
+		}
+	}
+}

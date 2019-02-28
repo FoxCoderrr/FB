@@ -1,0 +1,92 @@
+<ion-view view-title="恒瑞国际" class="back_ec contract_wrap">
+	<header class="header">
+		<!--<i class="header_i1 icon ion-chevron-left" ng-click="back()"></i>-->
+		<img ng-click="toAddContract()" class="left_img" src="img/jiahao.png" />
+		<b ng-click="showChoice()">{{title}}</b>
+		<i class="iconfont icon-xiajiantou" ng-class="{true:'rotate',false:''}[bool]"></i>
+		<!--<img class="edit_img" src="img/bianji.png" ng-click="edit()"/>-->
+		<i class="iconfont icon-bianji edit_img1" ng-class="{true:'f_c_white',false:''}[my==1]" ng-click="edit()"></i>
+		<img class="right_img" src="img/set.png"  ng-click="showMenu()"/>
+	</header>
+	<ion-content ng-click="hideModal()" class="top bg_black" overflow-scroll="true">
+		<div class="contract_box">
+			<div class="contract_title">
+				<table class="layui-table" lay-skin="nob">
+					<thead>
+						<tr>
+							<td>合约名称</td>
+						</tr>
+					</thead>
+					<tbody class="f_c_yellow">
+						<tr ng-repeat="item in contracts track by $index" type="{{$index}}" ng-class="{true:'select_tr',false:''}[t_id==item.name]" on-hold="addSelf($event,item.name,$index)" ng-click="operate($event,$index)">
+							<td>{{item.name}}
+							<div class="d_select" ng-if="t_id==item.name">
+								<button class="btn" ng-click="addSub($event)">加入自选</button>
+							</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="contract_list">
+				<table class="layui-table" lay-skin="nob">
+					<thead>
+						<tr>
+							<td>最新价</td>
+							<td>涨跌</td>
+							<td>涨幅(%)</td>
+							<td>买一价</td>
+							<td>买一量</td>
+							<td>卖一价</td>
+							<td>卖一量</td>
+							<td>持仓量</td>
+							<td>成交量</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in contracts track by $index" ng-class="{true:'select_tr',false:''}[t_id==item.name]" on-hold="addSelf($event,item.name,$index)" ng-click="operate($event,$index)">
+							<td ng-class="item.color">{{item.close}}</td>
+							<td ng-class="item.color">{{item.change}}</td>
+							<td ng-class="item.color">{{item.changeRate}}</td>
+							<td ng-class="item.color">{{item.ask1Price}}</td>
+							<td>{{item.ask1Volume}}</td>
+							<td ng-class="item.color">{{item.bid1Price}}</td>
+							<td>{{item.bid1Volume}}</td>
+							<td>{{item.turnover}}</td>
+							<td>{{item.volume}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div style="height: 5rem;">
+
+		</div>
+	</ion-content>
+	<div class="choice_modal" ng-click="preventDefault($event)">
+			<div>
+				<div>
+					<span ng-click="myContract(1)" ng-class="{true:'s_select',false:''}[my==1]">自选合约列表</span>
+				</div>
+			</div>
+			<div class="d_list">
+				<div>					
+					<div class="d_title">国内</div>
+					<div class="d_con">
+						<div ng-repeat="item in contracts_type[0]">
+							<span ng-click="select(item,0)" ng-class="{true:'s_select',false:''}[id==item]">{{item}}</span>
+						</div>
+					</div>
+				</div>
+				<div>					
+					<div class="d_title">国际</div>
+					<div class="d_con">
+						<div ng-repeat="item in contracts_type[1]">
+							<span ng-click="select(item,1)" ng-class="{true:'s_select',false:''}[id1==item]">{{item}}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</ion-view>

@@ -1,0 +1,259 @@
+{
+  "views/cloud_condition.html": {
+    "href": "views/cloud_condition.html",
+    "priority": 0
+  },
+  "views/about.html": {
+    "href": "views/about.html",
+    "priority": 0
+  },
+  "views/cloud_stop_loss.html": {
+    "href": "views/cloud_stop_loss.html",
+    "priority": 0
+  },
+  "views/tab-tab2.html": {
+    "href": "views/tab-tab2.html",
+    "priority": 0
+  },
+  "views/add_contract.html": {
+    "href": "views/add_contract.html",
+    "priority": 0
+  },
+  "views/tabs2-tabd.html": {
+    "href": "views/tabs2-tabd.html",
+    "priority": 0
+  },
+  "views/add_condition_order.html": {
+    "href": "views/add_condition_order.html",
+    "priority": 0
+  },
+  "views/deal/deal_set.html": {
+    "href": "views/deal/deal_set.html",
+    "priority": 0
+  },
+  "views/home/statement.html": {
+    "href": "views/home/statement.html",
+    "priority": 0
+  },
+  "views/home/official_notice.html": {
+    "href": "views/home/official_notice.html",
+    "priority": 0
+  },
+  "views/home/set_up.html": {
+    "href": "views/home/set_up.html",
+    "priority": 0
+  },
+  "views/tab-tab1.html": {
+    "href": "views/tab-tab1.html",
+    "priority": 0
+  },
+  "views/deal/market.html": {
+    "href": "views/deal/market.html",
+    "priority": 0
+  },
+  "views/tabs2-taba.html": {
+    "href": "views/tabs2-taba.html",
+    "priority": 0
+  },
+  "views/target/kdj.html": {
+    "href": "views/target/kdj.html",
+    "priority": 0
+  },
+  "views/target/cci.html": {
+    "href": "views/target/cci.html",
+    "priority": 0
+  },
+  "views/tabs2-tabc.html": {
+    "href": "views/tabs2-tabc.html",
+    "priority": 0
+  },
+  "views/deal/bind_card.html": {
+    "href": "views/deal/bind_card.html",
+    "priority": 0
+  },
+  "views/deal/capital.html": {
+    "href": "views/deal/capital.html",
+    "priority": 0
+  },
+  "views/deal/gold.html": {
+    "href": "views/deal/gold.html",
+    "priority": 0
+  },
+  "views/home/self_list.html": {
+    "href": "views/home/self_list.html",
+    "priority": 0
+  },
+  "views/index/forget_pass.html": {
+    "href": "views/index/forget_pass.html",
+    "priority": 0
+  },
+  "views/target/rsi.html": {
+    "href": "views/target/rsi.html",
+    "priority": 0
+  },
+  "views/search.html": {
+    "href": "views/search.html",
+    "priority": 0
+  },
+  "views/tab-tab3.html": {
+    "href": "views/tab-tab3.html",
+    "priority": 0
+  },
+  "views/tab-tab4.html": {
+    "href": "views/tab-tab4.html",
+    "priority": 0
+  },
+  "views/index/risk_book.html": {
+    "href": "views/index/risk_book.html",
+    "priority": 0
+  },
+  "views/deal/deal.html": {
+    "href": "views/deal/deal.html",
+    "priority": 0
+  },
+  "views/variety_set.html": {
+    "href": "views/variety_set.html",
+    "priority": 0
+  },
+  "views/order_history.html": {
+    "href": "views/order_history.html",
+    "priority": 0
+  },
+  "views/index/login.html": {
+    "href": "views/index/login.html",
+    "priority": 0
+  },
+  "views/tabs.html": {
+    "href": "views/tabs.html",
+    "priority": 0
+  },
+  "views/tabs2-tabe.html": {
+    "href": "views/tabs2-tabe.html",
+    "priority": 0
+  },
+  "views/condition_risk_tip.html": {
+    "href": "views/condition_risk_tip.html",
+    "priority": 0
+  },
+  "views/target/boll.html": {
+    "href": "views/target/boll.html",
+    "priority": 0
+  },
+  "views/setting.html": {
+    "href": "views/setting.html",
+    "priority": 0
+  },
+  "views/index/confirm_balance.html": {
+    "href": "views/index/confirm_balance.html",
+    "priority": 0
+  },
+  "views/tabs2-tabb.html": {
+    "href": "views/tabs2-tabb.html",
+    "priority": 0
+  },
+  "views/index/register.html": {
+    "href": "views/index/register.html",
+    "priority": 0
+  },
+  "views/target/vol.html": {
+    "href": "views/target/vol.html",
+    "priority": 0
+  },
+  "views/target/macd.html": {
+    "href": "views/target/macd.html",
+    "priority": 0
+  },
+  "views/tabs2.html": {
+    "href": "views/tabs2.html",
+    "priority": 0
+  },
+  "views/edit_contract.html": {
+    "href": "views/edit_contract.html",
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "img/icon.png",
+      "lib/css/ionic.css",
+      "css/lCalendar.css",
+      "css/layer.css",
+      "layui/css/layui.css",
+      "iconfont/iconfont.css",
+      "css/index.css",
+      "css/main.css",
+      "lib/css/my-picker.css",
+      "css/mobileSelect.css",
+      "lib/fonts/iconfont0.css",
+      "js/jquery.min.js",
+      "lib/js/ionic.bundle.min.js",
+      "js/ionic-citypicker.min.js",
+      "layui/layui.all.js",
+      "js/echarts.min.js",
+      "js/ionic-datepicker.bundle.min.js",
+      "js/lCalendar.min.js",
+      "js/controller/time_line.js",
+      "js/mobileSelect.js",
+      "lib/js/picker.min.js",
+      "js/controller/app.js",
+      "js/controller/indexCtr.js",
+      "img/z1.png",
+      "img/z2.png",
+      "img/z3.png",
+      "img/z4.png",
+      "img/z5.png",
+      "img/z6.png",
+      "img/z7.png",
+      "img/z8.png",
+      "img/z9.png",
+      "img/z10.png"
+    ],
+    "refer": [
+      "views/cloud_condition.html",
+      "views/about.html",
+      "views/cloud_stop_loss.html",
+      "index.html",
+      "views/tab-tab2.html",
+      "views/add_contract.html",
+      "views/tabs2-tabd.html",
+      "views/add_condition_order.html",
+      "views/deal/deal_set.html",
+      "views/home/statement.html",
+      "views/home/official_notice.html",
+      "views/home/set_up.html",
+      "views/tab-tab1.html",
+      "views/deal/market.html",
+      "views/tabs2-taba.html",
+      "views/target/kdj.html",
+      "views/target/cci.html",
+      "views/tabs2-tabc.html",
+      "views/deal/bind_card.html",
+      "views/deal/capital.html",
+      "views/deal/gold.html",
+      "views/home/self_list.html",
+      "views/index/forget_pass.html",
+      "views/target/rsi.html",
+      "views/search.html",
+      "views/tab-tab3.html",
+      "views/tab-tab4.html",
+      "views/index/risk_book.html",
+      "views/deal/deal.html",
+      "views/variety_set.html",
+      "views/order_history.html",
+      "views/index/login.html",
+      "views/tabs.html",
+      "views/tabs2-tabe.html",
+      "views/condition_risk_tip.html",
+      "views/target/boll.html",
+      "views/setting.html",
+      "views/index/confirm_balance.html",
+      "views/tabs2-tabb.html",
+      "views/index/register.html",
+      "views/target/vol.html",
+      "views/target/macd.html",
+      "views/tabs2.html",
+      "views/edit_contract.html"
+    ],
+    "priority": 0
+  }
+}
